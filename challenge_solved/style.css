@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    display: flex;
+}
+
+.card{
+    background-color: blueviolet;
+    width: 400px;
+}
+
+section .card{
+    background-color: rgb(195, 55, 255);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+}
+
+section .card figure{
+    width: 100%;
+}
+section .card figure img{
+    width: 100%;
+}
+
+section .card h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 5px 0px;
+    color: aqua;
+}
+
+section .card p{
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: monospace;
+    padding: 5px 0px;
+    color: rgb(144, 255, 203);
+}
+
+section .card p::first-letter{
+    color: brown;
+    font-weight: lighter
+    font-size: 2.5rem
+}

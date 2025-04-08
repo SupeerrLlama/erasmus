@@ -1,0 +1,35 @@
+/*Especificidad*/
+
+.title{
+    background-color: rgb(165, 250, 144);
+    color: rgb(6, 3, 70);
+    text-transform: uppercase;
+}
+
+*{
+    background-color: cadetblue;
+    color: brown;
+}
+
+span{
+    color: aquamarine;
+}
+
+header {
+    background-color: blueviolet;
+    width: 100%;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header h1 .title {
+    color: fuchsia;
+}
+
+span{
+    color: rgb(65, 4, 127);
+    content: 'Antonio';
+}

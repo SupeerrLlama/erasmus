@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Store</title>
+    
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="LOGO.jpg" alt="" width="100">
+        </figure>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">about us</a>
+                </li>
+                <li>
+                    <a href="#">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    </style>
+    <h1>Welcome to the Art Store</h1>
+    <p>Click on an artwork to view it in full size.</p>
+    <div class="gallery">
+        <img src="AVATAR.jpg" alt="Art 1" onclick="openModal(this.src)">
+        <img src="DD.jpg" alt="Art 2" onclick="openModal(this.src)">
+        <img src="art3.jpg" alt="Art 3" onclick="openModal(this.src)">
+    </div>
+    <div class="gallery">
+        <img src="AVATAR.jpg" alt="Art 1" onclick="openModal(this.src)">
+        <img src="DD.jpg" alt="Art 2" onclick="openModal(this.src)">
+        <img src="art3.jpg" alt="Art 3" onclick="openModal(this.src)">
+    </div>
+    <div class="gallery">
+        <img src="AVATAR.jpg" alt="Art 1" onclick="openModal(this.src)">
+        <img src="DD.jpg" alt="Art 2" onclick="openModal(this.src)">
+        <img src="art3.jpg" alt="Art 3" onclick="openModal(this.src)">
+    </div>
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+    <script>
+        function openModal(src) {
+            document.getElementById('modal').style.display = 'block';
+            document.getElementById('modalImg').src = src;
+        }
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

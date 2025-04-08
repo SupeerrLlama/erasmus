@@ -1,0 +1,48 @@
+/* media queries */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+header{
+    text-align: center;
+    background-color: darkcyan;
+    color: chocolate;
+    padding: 10px;
+}
+
+section{
+    width: 100;
+    background-color: darkmagenta;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+section article{
+    width: 80%;
+    margin: 0 auto;
+    background-color: darkgreen;
+    padding: 10px;
+    text-align: justify;
+}
+
+/* aplicando los media queries */
+
+@media (min-width: 1024px){
+    h1{
+        background-color: darkgoldenrod;
+        color: brown;
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 640px){
+    h1{
+        background-color: rgb(34, 78, 64);
+        color: rgb(235, 191, 237);
+        font-size: 1.5em;
+    }
+}
