@@ -14,3 +14,5 @@ Subirlo a github (Publish)
 git push origin main
 
 Sincronizar cambios 
+
+Lineas anadinas
