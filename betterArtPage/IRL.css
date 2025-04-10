@@ -1,0 +1,139 @@
+.rows{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.poza img{
+    overflow: hidden;
+    width: 350px;
+}
+
+h1{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(91, 2, 142, 0.829);
+}
+.poza{
+    background-color: rgb(169, 119, 255);
+    border-radius: 20px;
+    height: auto;
+    overflow: hidden;
+    margin: 10px 0px;
+    width: 350px;
+}
+
+.poza{
+    cursor: pointer;
+    transition: transform 0.2s;
+    /* border-style: solid;
+    border-color: indigo; */
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.518);
+}
+.poza:hover {
+    transform: scale(1.05);
+}
+
+.input-container {
+    width: 220px;
+    position: relative;
+  }
+  
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: calc(50% + 5px);
+    transform: translateY(calc(-50% - 5px));
+  }
+  
+  .input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    transition: .2s linear;
+    border: 2.5px solid black;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .input:focus {
+    outline: none;
+    border: 0.5px solid black;
+    box-shadow: -5px -5px 0px black;
+  }
+  
+  .input-container:hover > .icon {
+    animation: anim 1s linear infinite;
+  }
+  
+  @keyframes anim {
+    0%,
+    100% {
+      transform: translateY(calc(-50% - 5px)) scale(1);
+    }
+  
+    50% {
+      transform: translateY(calc(-50% - 5px)) scale(1.1);
+    }
+  }
+
+  .icons{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(169, 119, 255);
+    padding: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.471);
+  }
+
+  .basket{
+    padding: 0px 5px 0px 15px;
+  }
+
+.basket{
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+.basket:hover {
+  transform: scale(1.10);
+}
+.home{
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+.home:hover {
+  transform: scale(1.10);
+}
+.profile{
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+.profile:hover{
+  transform: scale(1.10);
+}
+
+body{
+  background-image: url(https://i.pinimg.com/736x/31/c0/b6/31c0b6071e74a856abcb9f9bd08ec026.jpg);
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  align-content: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
